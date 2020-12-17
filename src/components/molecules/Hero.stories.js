@@ -2,12 +2,12 @@ import React from "react";
 import {text} from "@storybook/addon-knobs";
 
 import Hero from "./Hero";
-import BgHighWayImage from "../stories/assets/bg-highway.jpg";
-import BgCarImage from "../stories/assets/bg-car.webp";
-import Heading from "./Heading";
-import Button from "./Button";
+import BgHighWayImage from "stories/assets/bg-highway.jpg";
+import BgCarImage from "stories/assets/bg-car.webp";
+import Heading from "components/atoms/Heading";
+import Button from "components/atoms/Button";
 
-export default { title: "Components/Hero", component: Hero };
+export default { title: "Components/Molecules/Hero", component: Hero };
 
 export const usage = () => (
   <Hero image={BgCarImage}>
