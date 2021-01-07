@@ -1,17 +1,17 @@
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import styled from "styled-components";
+import PropTypes from "prop-types";
 import { breakAt, BreakpointSizes } from "styles/Breakpoints";
 
 const Container = styled.div`
   width: 100%;
   padding: 0 8px;
 
- ${breakAt(BreakpointSizes.sm)} {
+  ${breakAt(BreakpointSizes.sm)} {
     padding: 0 16px;
   }
 
- ${breakAt(BreakpointSizes.lg)} {
-    width: 1140px;
+  ${breakAt(BreakpointSizes.lg)} {
+    width: 940px;
     padding: 0;
     margin: 0 auto;
   }
@@ -22,7 +22,7 @@ Container.propTypes = {
 };
 
 Container.defaultProps = {
-  children: undefined
+  children: undefined,
 };
 
 export default Container;
