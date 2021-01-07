@@ -35,13 +35,11 @@ export const withList = () => (
         industry.
       </li>
       <li>
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout.
+        It is a long established fact that a reader will be distracted.
       </li>
       <li>
         All the Lorem Ipsum generators on the Internet tend to repeat predefined
-        chunks as necessary, making this the first true generator on the
-        Internet.
+        chunks as necessary.
       </li>
     </ul>
     <Button variant='outlined' color='primary'>Matricule-se agora</Button>

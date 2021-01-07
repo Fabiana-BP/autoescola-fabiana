@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { breakAt, BreakpointSizes } from "styles/Breakpoints";
 import PropTypes from 'prop-types';
+import Container from 'components/atoms/Container';
 
 
 const Root = styled.div`
@@ -17,6 +17,7 @@ const Root = styled.div`
 `;
 
 const Content = styled.div`
+  display: inline-block;
   p,
   li {
     font-size: 20px;
@@ -36,20 +37,6 @@ const Content = styled.div`
   }
 `;
 
-const Container = styled.div`
-  width: 100%;
-  padding: 0 8px;
-
- ${breakAt(BreakpointSizes.sm)} {
-    padding: 0 16px;
-  }
-
- ${breakAt(BreakpointSizes.lg)} {
-    width: 1140px;
-    padding: 0;
-    margin: 0 auto;
-  }
-`;
 
 const Hero = ({ image, children }) => (
   <Root image={image} data-testid="hero">
