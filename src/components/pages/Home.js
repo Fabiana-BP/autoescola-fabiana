@@ -9,9 +9,53 @@ import Feature from "components/atoms/Feature";
 import Grid from "components/atoms/Grid";
 import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
+import ProductGrid from "components/organisms/ProductGrid";
 
 import HeroImage from "assets/hero.webp";
 import AboutVideo from "assets/about.mp4";
+import Serv01 from "assets/moto_carro.jpeg";
+import Serv02 from "assets/carro.webp";
+import Serv03 from "assets/moto.webp";
+import Serv04 from "assets/caminhao.webp";
+import Serv05 from "assets/avulsa.webp";
+
+const products = [
+  {
+    id: 1,
+    title: "Primeira Habilitação Carro e Moto",
+    summary:
+      "Proident nulla dolor consequat eu reprehenderit voluptate commodo.",
+    image: Serv01,
+  },
+  {
+    id: 2,
+    title: "Primeira Habilitação Carro",
+    summary:
+      "Proident nulla dolor consequat eu reprehenderit voluptate commodo.",
+    image: Serv02,
+  },
+  {
+    id: 3,
+    title: "Primeira Habilitação Moto",
+    summary:
+      "Proident nulla dolor consequat eu reprehenderit voluptate commodo.",
+    image: Serv03,
+  },
+  {
+    id: 4,
+    title: "Mudança de Categoria Caminhão",
+    summary:
+      "Proident nulla dolor consequat eu reprehenderit voluptate commodo.",
+    image: Serv04,
+  },
+  {
+    id: 5,
+    title: "Aulas Avulsas",
+    summary:
+      "Proident nulla dolor consequat eu reprehenderit voluptate commodo.",
+    image: Serv05,
+  },
+];
 
 const Home = () => (
   <>
@@ -60,6 +104,7 @@ const Home = () => (
     <Section inverse>
       <Heading>
         <h2>Conheça nossos serviços</h2>
+        <ProductGrid products={products} />
       </Heading>
     </Section>
     <Section>
