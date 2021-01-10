@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
 
 import Hero from "components/molecules/Hero";
@@ -166,8 +165,5 @@ const Home = () => (
     <Footer />
   </>
 );
-
-Home.defaultProps = {};
-Home.propTypes = {};
 
 export default Home;
