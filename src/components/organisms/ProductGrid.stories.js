@@ -4,10 +4,12 @@ import ProductGrid from "./ProductGrid";
 
 import PlaceholderImage from "stories/assets/carro.jpeg";
 
-export default {
+const story = {
   title: "Components/Organisms/ProductGrid",
   component: ProductGrid,
 };
+
+export default story;
 
 export const usage = () => (
   <ProductGrid

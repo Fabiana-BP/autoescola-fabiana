@@ -2,9 +2,9 @@
 
 This project was created in the professional React course.
 
-## See Project
-[https://autoescola-fabiana.vercel.app/](https://autoescola-fabiana.vercel.app/)
+It can be accessed at: [Projeto](https://autoescola-fabiana.vercel.app/)
 
+Storybook: [Stories](https://5ffa51c144427b0021c82b7a-keqssjxjpp.chromatic.com/)
 
 ## Available Scripts
 

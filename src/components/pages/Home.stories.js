@@ -2,13 +2,11 @@ import React from "react";
 
 import Home from "components/pages/Home";
 
-export default {
+const story = {
   title: "Components/Pages/Home",
   component: Home,
 };
 
-export const usage = () =>(
-  <Home/>
-);
+export default story;
 
-
+export const usage = () => <Home />;
