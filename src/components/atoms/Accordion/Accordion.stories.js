@@ -3,10 +3,11 @@ import React from "react";
 import Accordion from "./Accordion";
 import AccordionGroup from "./AccordionGroup";
 
-export default {
+const story = {
   title: "Components/Atoms/Accordion",
   component: Accordion,
 };
+export default story;
 
 export const usage = () => (
   <>

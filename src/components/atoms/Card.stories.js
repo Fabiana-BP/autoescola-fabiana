@@ -7,11 +7,13 @@ import Button from "components/atoms/Button";
 
 import PlaceholderImage from "stories/assets/carro.jpeg";
 
-export default {
+const story = {
   title: "Components/Atoms/Card",
   component: Card,
   subcomponents: { CardBody, CardMedia },
 };
+
+export default story;
 
 export const usage = () => (
   <Section inverse>

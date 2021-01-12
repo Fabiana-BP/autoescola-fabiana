@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import Footer from './Footer';
+import Footer from "./Footer";
 
-export default {
-  title: 'Components/Organisms/Footer',
-  component: Footer
-}
+const story = {
+  title: "Components/Organisms/Footer",
+  component: Footer,
+};
 
-export const usage = () => (
-  <Footer/>
-);
+export default story;
+
+export const usage = () => <Footer />;

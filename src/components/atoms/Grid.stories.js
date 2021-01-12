@@ -3,10 +3,12 @@ import styled from "styled-components";
 
 import Grid from "./Grid";
 
-export default {
+const story = {
   title: "Components/Atoms/Grid",
-  component: Grid
+  component: Grid,
 };
+
+export default story;
 
 const Box = styled.div`
   height: 200px;
