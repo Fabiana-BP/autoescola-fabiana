@@ -1,5 +1,5 @@
 jobs:
-  setup:
+  tests:
     docker:
       - image: cimg/node:14.15.4-browsers
     steps:
@@ -7,10 +7,13 @@ jobs:
       - node/install-yarn
       - run: node --version
       - run: yarn --version
+      - node/install-packages:
+        pkg-manager: yarn
+      - run: yarn lint
 orbs:
   node: circleci/node@4.1.0
 version: 2.1
 workflows:
   ci:
     jobs:
-      - setup
+      - tests
