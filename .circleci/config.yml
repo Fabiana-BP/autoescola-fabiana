@@ -4,8 +4,7 @@ jobs:
       - image: cimg/node:14.15.4-browsers
     steps:
       - checkout
-      - node/install:
-          install-yarn: true
+      - node/install-yarn
       - run: node --version
       - run: yarn --version
 orbs:
