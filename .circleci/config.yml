@@ -11,7 +11,7 @@ jobs:
           pkg-manager: yarn
       - run: yarn lint
       - run: yarn cover
-      - codecov:
+      - codecov/upload:
           file: coverage/*.json
 orbs:
   node: circleci/node@4.1.0
