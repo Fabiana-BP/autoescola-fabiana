@@ -2,6 +2,8 @@
 
 ![CircleCI](https://img.shields.io/circleci/build/github/Fabiana-BP/autoescola-fabiana/main)
 
+![Codecov](https://img.shields.io/codecov/c/github/Fabiana-BP/autoescola-fabiana)
+
 Este projeto foi desenvolvido durante o curso [React Profissional](https://nardiniacademy.com/).
 
 It can be accessed at: [Projeto](https://autoescola-fabiana.vercel.app/)
