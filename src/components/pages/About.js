@@ -9,7 +9,7 @@ import Section from "components/molecules/Section";
 import Grid from "components/atoms/Grid";
 import Footer from "components/organisms/Footer";
 import Card, { CardMedia, CardMediaDescription } from "components/atoms/Card";
-import Home from "components/pages/Home";
+// import Home from "components/pages/Home";
 import BreadCrumb from "components/atoms/BreadCrumb";
 
 import HeroImage from "assets/hero.webp";
