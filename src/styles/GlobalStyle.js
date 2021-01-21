@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 import { Helmet } from "react-helmet";
-import React from 'react';
+import React from "react";
 
-import {BreakpointSizes,breakAt} from "./Breakpoints";
+import { BreakpointSizes, breakAt } from "./Breakpoints";
 
 const GlobalStyle = createGlobalStyle`
 html{
@@ -21,13 +21,17 @@ body{
   margin:0;
 }
 
+a, button{
+  font-family: 'Poppins', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6{
   line-height: 1.3;
   font-weight: 700;
   letter-spacing: 2px;
 
   strong{
-    color:${props => props.theme.colors.primary.main};
+    color:${(props) => props.theme.colors.primary.main};
   }
 }
 
@@ -90,9 +94,10 @@ const GlobalStyleComposed = () => (
   <>
     <GlobalStyle />
     <Helmet>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
-     rel="stylesheet"
-     /> 
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
+        rel="stylesheet"
+      />
     </Helmet>
   </>
 );

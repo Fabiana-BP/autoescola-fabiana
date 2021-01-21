@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 
 export const ButtonColors = {
@@ -12,9 +12,9 @@ export const ButtonsVariants = {
   default: "default",
   outlined: "outlined",
   link: "link",
-}
+};
 
-const getMainColor = ({theme, color}) => {
+const getMainColor = ({ theme, color }) => {
   switch (color) {
     case ButtonColors.primary:
       return theme.colors.primary.main;
@@ -25,8 +25,8 @@ const getMainColor = ({theme, color}) => {
   }
 };
 
-const getDarkColor = ({theme, color}) => {
-  switch (color){
+const getDarkColor = ({ theme, color }) => {
+  switch (color) {
     case ButtonColors.primary:
       return theme.colors.primary.dark;
     case ButtonColors.danger:
@@ -36,9 +36,8 @@ const getDarkColor = ({theme, color}) => {
   }
 };
 
-
-const getColorText = ({theme,color}) => {
-  switch (color){
+const getColorText = ({ theme, color }) => {
+  switch (color) {
     case ButtonColors.primary:
       return theme.colors.primary.text;
     case ButtonColors.danger:
@@ -49,35 +48,38 @@ const getColorText = ({theme,color}) => {
 };
 
 const getOutlinedText = (props) => {
-  if (props.color === ButtonColors.default){
+  if (props.color === ButtonColors.default) {
     return "#212121";
   }
   return getMainColor(props);
-}
+};
 
-const getLinkText = (props) =>{
-  if (props.color === ButtonColors.default){
+const getLinkText = (props) => {
+  if (props.color === ButtonColors.default) {
     return "#757575";
   }
   return getMainColor(props);
-}
+};
 
 const Button = styled.button`
   font-size: 1rem;
   font-weight: 600;
+
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
   background-color: ${getMainColor};
   border: 2px solid ${getMainColor};
   color: ${getColorText};
+  display: inline-block;
+  text-decoration: none;
 
-  &:disabled{
+  &:disabled {
     opacity: 0.6;
     cursor: not-allowed;
   }
 
-  &:hover:enabled{
+  &:hover:not(:disabled) {
     background-color: ${getDarkColor};
     border-color: ${getDarkColor};
   }
@@ -93,7 +95,7 @@ const ButtonOutlined = styled(Button)`
   background-color: transparent;
   color: ${getOutlinedText};
 
-  &:hover:enabled {
+  &:hover:not(:disabled) {
     background-color: transparent;
     color: ${getDarkColor};
   }
@@ -103,24 +105,24 @@ const ButtonLink = styled(Button)`
   background-color: transparent;
   border-color: transparent;
   color: ${getLinkText};
-  padding-left:0;
-  padding-right:0;
+  padding-left: 0;
+  padding-right: 0;
 
-  &:hover:enabled{
+  &:hover:not(:disabled) {
     background-color: transparent;
     border-color: transparent;
-    color: ${getDarkColor}
+    color: ${getDarkColor};
   }
 `;
 
 const ButtonWrapper = (props) => {
-  switch (props.variant){
+  switch (props.variant) {
     case ButtonsVariants.outlined:
-      return <ButtonOutlined {...props}/>;
+      return <ButtonOutlined {...props} />;
     case ButtonsVariants.link:
-      return <ButtonLink {...props}/>;
+      return <ButtonLink {...props} />;
     default:
-      return <Button {...props}/>;
+      return <Button {...props} />;
   }
 };
 
@@ -136,6 +138,6 @@ ButtonWrapper.propTypes = {
   children: PropTypes.node,
   color: PropTypes.oneOf(Object.values(ButtonColors)),
   variant: PropTypes.oneOf(Object.values(ButtonsVariants)),
-}
+};
 
 export default ButtonWrapper;
