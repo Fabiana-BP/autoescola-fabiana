@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^12.5.0",
     "babel-loader": "^8.2.2",
     "chromatic": "^5.5.0",
+    "history": "^5.0.0",
     "jest-styled-components": "^7.0.3",
     "prettier": "^2.2.1",
     "prop-types": "^15.7.2",
@@ -19,6 +20,7 @@
     "react-dom": "17.0.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.1.0",
+    "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "4.0.1",
     "storybook": "^6.1.14",
     "styled-components": "^5.2.1"
