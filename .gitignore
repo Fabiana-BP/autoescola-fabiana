@@ -25,3 +25,6 @@ yarn-error.log*
 
 # storybook
 build-storybook.log
+
+
+package-lock.json

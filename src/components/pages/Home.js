@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
@@ -120,11 +121,20 @@ const Home = () => (
             aliqua qui labore enim nisi.
           </p>
           <div>
-            <Button color="primary">Saiba mais</Button>
+            <Button as={Link} to="/sobre" color="primary">
+              Saiba mais
+            </Button>
           </div>
         </div>
         <div>
-          <video src={AboutVideo} width="100%" autoPlay loop muted />
+          <video
+            src={AboutVideo}
+            width="100%"
+            autoPlay
+            playsInline
+            loop
+            muted
+          />
         </div>
       </Grid>
     </Section>
