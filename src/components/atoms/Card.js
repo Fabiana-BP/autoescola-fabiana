@@ -74,11 +74,11 @@ export const CardMediaDescription = ({ children }) => (
 );
 
 CardMediaDescription.propTypes = {
-  children: undefined,
+  children: PropTypes.node,
 };
 
 CardMediaDescription.defaultProps = {
-  children: PropTypes.node,
+  children: undefined,
 };
 
 //#endregion
